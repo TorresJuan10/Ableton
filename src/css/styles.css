@@ -262,342 +262,70 @@ a {
 
 
 
+/* EXCEPCIONALES */
 
+.excepcionales {
 
-
-
-/* RESPONSIVE TELEFONO */
-@media (max-width: 390px) {
-
-    /* HEADER */
-
-    header {
-        display: flex;
-        flex-direction: row;
-        /* text-align: end; */
-        /* justify-content: center; */
-        height: auto;
-        justify-content: space-between;
-        margin: 1rem;
-    }
-    .cerrar-menu {
-        margin-left: 3rem;
-    }
-    .icono img {
-        width: 80px;
-    }
-    .abrir-menu {
-        display: block;
-    }
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        position: absolute;
-        top: 0;
-        right: -1%;
-        background-color: var(--negro);
-        width: auto;
-        height: 620px;
-        z-index: 10;
-    }
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-     
-    }
-    .nav nav, ul, li, a {
-        flex-direction: column;
-        color: var(--blanco);
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        align-items: end;
-
-    } 
-    .nav__content_right {
-    margin-bottom: 9rem;
-}
-    .cerrar-menu {
-        margin-bottom: 1rem;
-        display: block;
-        
-    }
-
-    .abrir-menu {
-            font-size: 2.5rem;
-        }
-    /* MAIN */
-    .main {
-        width: 100%;
-        align-items: center;    
-    }
-    
-    .intro_bg {
-        height: 35vh;
-        right: 9%;   
-    }
-
-    .logotipo_intro {  
-    left: 50%;
-    top: 25%; 
-    }
-    
-    .intro_content {
-        width: 100%;
-        margin: 0 !important;
-        text-align: center;
-        padding: 0 2.5rem; 
-    }
-
-    /* ABOUT */
-
-    .about {
-       
-        height: 250px !important;
-        margin: 0;
-        margin-top: 2rem;
-        
-        
-    }
+    display: grid;
+    grid-template-columns: 57% 43%;
+    position: relative;
     
 
-    .about_left_image img {
-        width: 100%;
-        height: 160px !important;
-        position: relative;
-        top: 2rem !important;
-        right: -2rem !important;
-    }
-
-    /* ABOUT_TEXT */
-
-    .about_text {
-        width: 100%;
-        height: auto;
-    }
-
-    .about_text_content {
-        padding: 0;
-        margin: 2.4rem 2.4rem 2.4rem 4rem;
-        font-family: var(--inter);
-       
-    }
-
-    .about_text_parrafo {
-        font-size: 12px;
-    }
-
-    /* PRESENTATION */
-
-    .presentation {
-        width: 100%;
-        height: 250px;
-    }
-    .video {
-        width: 100%;
-        height: 250px;
-    }
-
-    .presentation_info_titulo {
-        margin: 0;
-        margin-bottom: 1.4rem;
-    }
 }
 
-
-
-
-
-/* RESPONSIVE PC  */
-@media(max-width: 1024px ) and (min-width: 800px) {
+.excepcionales_left {
+    background-color: var(--verdeclaro);
     
-    header {
-        display: flex;
-        flex-direction: row;
-        /* text-align: end; */
-        /* justify-content: center; */
-        height: auto;
-        justify-content: space-between;
-        margin: 1rem;
-    }
-    .cerrar-menu {
-        margin-left: 3rem;
-    }
-    .icono img {
-        width: 80px;
-    }
-    .abrir-menu {
-        display: block;
-    }
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        position: absolute;
-        top: 0;
-        right: -1%;
-        background-color: var(--negro);
-        width: auto;
-        height: 620px;
-        z-index: 10;
-    }
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-     
-    }
-    .nav nav, ul, li, a {
-        flex-direction: column;
-        color: var(--blanco);
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        align-items: end;
-
-    } 
-    .nav__content_right {
-    margin-bottom: 9rem;
-}
-    .cerrar-menu {
-        margin-bottom: 1rem;
-        display: block;
-        
-    }
-
-    /* MAIN*/
-
- .intro_content {
-    margin-left: 10rem;
- }
-
- .logotipo_intro {
-
-    transform: translate(-50%, 0); /* Centra la imagen dentro del contenedor */
 }
 
-/* PRESENTATION */ 
-
-.presentation_info {
-    margin: 0;
-}
-
-
-}
-
-/* MEDIA TABLET */
-@media (max-width: 768px) {
-
-/* HEADER */
-
-header {
+.excepcionales_left {
     display: flex;
-    flex-direction: row;
-    /* text-align: end; */
-    /* justify-content: center; */
-    height: auto;
-    justify-content: space-between;
-    margin: 1rem;
+    flex-direction: column; /* Coloca los elementos uno debajo del otro */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;    /* Centra horizontalmente */
+    height: auto;        /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+    gap: 5rem;
+    padding: 4rem;
 }
-.cerrar-menu {
-    margin-left: 3rem;
-}
-.icono img {
-    width: 80px;
-}
-.abrir-menu {
-    display: block;
-}
-.nav {
-    opacity: 0;
-    visibility: hidden;
+
+.excepcionales_left div {
     display: flex;
-    flex-direction: column;
-    align-items: end;
-    position: absolute;
-    top: 0;
-    right: -1%;
-    background-color: var(--negro);
-    width: auto;
-    height: 620px;
-    z-index: 10;
-}
-.nav.visible {
-    opacity: 1;
-    visibility: visible;
- 
-}
-.nav nav, ul, li, a {
-    flex-direction: column;
-    color: var(--blanco);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    align-items: end;
-
-} 
-.nav__content_right {
-margin-bottom: 9rem;
-}
-.cerrar-menu {
-    margin-bottom: 1rem;
-    display: block;
-    
-}
-
-
-/* MAIN */
-
-.main {
+    justify-content: center;
     align-items: center;
 }
 
-.intro_bg {
-    margin: 2rem 4rem 4rem 4rem;
-    height: 65vh;
-    width: 85%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative; 
-    overflow: hidden;
-     
+.excepcionales_left img {
+    max-width: 100%;        /* Ajusta la imagen para que no se desborde */
+    /* height: auto;           Mantiene la proporción de la imagen */
 }
 
-.intro_content {
-    margin-left: 8rem;
-}
-/* ABOUT */
-.about {
-    height: 450px;
-  
-}
-
-
-.about_left_image img {
+.excepcionales img {
     width: 100%;
-    height: 330px;
-    position: relative;
-    top: 4rem;
-    right: -3rem;
 }
 
-
-/* PRESENTATION */
-
-.presentation {
-    text-align: center;
-}
-.presentation video {
+.excepcionales_leftimage1 {
+    height: auto;
     width: 80%;
+   
 }
 
-.presentation_info {
-    width: 78%;
-    margin: 0;
-
-}
-.presentation_info_titulo{
-    line-height: 2rem;
+.excepcionales_leftimage2 {
+    height: auto;
+    width: 80%;
+   
 }
 
+
+.excepcionales_rigthimage1 img {
+    
+    
+    width: 90%;          /* Permite que el ancho se ajuste automáticamente */
+    height: 400px;        /* Ajusta la altura a la medida deseada */
+    object-fit: cover;    /* Opcional: Asegura que la imagen llene el contenedor sin deformarse */
+    
+    position: relative;
+    top: 12rem;
+    right: 5rem;
+    
 
 }

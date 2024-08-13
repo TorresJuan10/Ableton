@@ -1,0 +1,395 @@
+
+/* RESPONSIVE TELEFONO */
+@media (max-width: 390px) {
+
+    /* HEADER */
+
+    header {
+        display: flex;
+        flex-direction: row;
+        /* text-align: end; */
+        /* justify-content: center; */
+        height: auto;
+        justify-content: space-between;
+        margin: 1rem;
+    }
+    .cerrar-menu {
+        margin-left: 3rem;
+    }
+    .icono img {
+        width: 80px;
+    }
+    .abrir-menu {
+        display: block;
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: -1%;
+        background-color: var(--negro);
+        width: auto;
+        height: 620px;
+        z-index: 10;
+    }
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+     
+    }
+    .nav nav, ul, li, a {
+        flex-direction: column;
+        color: var(--blanco);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        align-items: end;
+
+    } 
+    .nav__content_right {
+    margin-bottom: 9rem;
+}
+    .cerrar-menu {
+        margin-bottom: 1rem;
+        display: block;
+        
+    }
+
+    .abrir-menu {
+            font-size: 2.5rem;
+        }
+    /* MAIN */
+    .main {
+        width: 100%;
+        align-items: center;    
+    }
+    
+    .intro_bg {
+        height: 35vh;
+        right: 9%;   
+    }
+
+    .logotipo_intro {  
+    left: 50%;
+    top: 25%; 
+    }
+    
+    .intro_content {
+        width: 100%;
+        margin: 0 !important;
+        text-align: center;
+        padding: 0 2.5rem; 
+    }
+
+    /* ABOUT */
+
+    .about {
+       
+        height: 250px !important;
+        margin: 0;
+        margin-top: 2rem;
+        
+
+    }
+    
+
+    .about_left_image img {
+        width: 100%;
+        height: 160px !important;
+        position: relative;
+        top: 2rem !important;
+        right: -2rem !important;
+    }
+
+    /* ABOUT_TEXT */
+
+    .about_text {
+        width: 100%;
+        height: auto;
+    }
+
+    .about_text_content {
+        padding: 0;
+        margin: 2.4rem 2.4rem 2.4rem 4rem;
+        font-family: var(--inter);
+       
+    }
+
+    .about_text_parrafo {
+        font-size: 12px;
+    }
+
+    /* PRESENTATION */
+
+    .presentation {
+        width: 100%;
+        height: auto; /* Ajusta la altura automáticamente */
+        margin-bottom: 3rem; /* Asegura suficiente espacio debajo de la sección para evitar superposición */
+        text-align: center;
+    }
+    .video {
+        width: 100%;
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+    .presentation_info {
+        width: 100%;
+        margin: 0;
+    }
+    .presentation_info_titulo {
+        margin: 0;
+        margin-bottom: 1.4rem;
+    }
+
+    /* EXCEPCIONALES */
+    .excepcionales {
+        display: grid;
+        grid-template-columns: 53% 47%; /* Asegura que las imágenes se apilen verticalmente */
+        gap: 1rem; /* Espacio entre imágenes */
+        margin-top: 1rem; /* Asegura separación suficiente de la sección anterior */
+    }
+    .excepcionales_left {
+        background-color: var(--verdeclaro);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem; /* Espacio dentro del contenedor */
+    }
+    .excepcionales_leftimage1, .excepcionales_leftimage2 {
+        width: 80%;
+        height: auto;
+    }
+    .excepcionales_rigthimage1 img {
+        width: 100%;
+        height: 150px !important; /* Ajustado según el espacio disponible */
+        object-fit: cover;
+        top: 4.5rem !important;
+    }
+}
+
+
+
+
+
+/* RESPONSIVE PC  */
+@media(max-width: 1024px ) and (min-width: 800px)  {
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        /* text-align: end; */
+        /* justify-content: center; */
+        height: auto;
+        justify-content: space-between;
+        margin: 1rem;
+    }
+    .cerrar-menu {
+        margin-left: 3rem;
+    }
+    .icono img {
+        width: 80px;
+    }
+    .abrir-menu {
+        display: block;
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: -1%;
+        background-color: var(--negro);
+        width: auto;
+        height: 620px;
+        z-index: 10;
+    }
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+     
+    }
+    .nav nav, ul, li, a {
+        flex-direction: column;
+        color: var(--blanco);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        align-items: end;
+
+    } 
+    .nav__content_right {
+    margin-bottom: 9rem;
+}
+    .cerrar-menu {
+        margin-bottom: 1rem;
+        display: block;
+        
+    }
+
+    /* MAIN*/
+
+ .intro_content {
+    margin-left: 10rem;
+ }
+
+ .logotipo_intro {
+
+    transform: translate(-50%, 0); /* Centra la imagen dentro del contenedor */
+}
+
+/* PRESENTATION */ 
+
+.presentation_info {
+    margin: 0;
+}
+
+/* EXCEPCIONALES */
+
+.excepcionales_rigthimage1 img {
+    
+    width: 90%;          /* Permite que el ancho se ajuste automáticamente */
+    height: 400px;        /* Ajusta la altura a la medida deseada */
+    object-fit: cover;    /* Opcional: Asegura que la imagen llene el contenedor sin deformarse */
+    
+    position: relative;
+    top: 8rem;
+    right: 5rem;
+    
+}
+
+
+}
+
+/* MEDIA TABLET */
+@media  (max-width: 768px) {
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-direction: row;
+    /* text-align: end; */
+    /* justify-content: center; */
+    height: auto;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.cerrar-menu {
+    margin-left: 3rem;
+}
+.icono img {
+    width: 80px;
+}
+.abrir-menu {
+    display: block;
+}
+.nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    top: 0;
+    right: -1%;
+    background-color: var(--negro);
+    width: auto;
+    height: 620px;
+    z-index: 10;
+}
+.nav.visible {
+    opacity: 1;
+    visibility: visible;
+ 
+}
+.nav nav, ul, li, a {
+    flex-direction: column;
+    color: var(--blanco);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: end;
+
+} 
+.nav__content_right {
+margin-bottom: 9rem;
+}
+.cerrar-menu {
+    margin-bottom: 1rem;
+    display: block;
+    
+}
+
+
+/* MAIN */
+
+.main {
+    align-items: center;
+}
+
+.intro_bg {
+    margin: 2rem 4rem 4rem 4rem;
+    height: 65vh;
+    width: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+    overflow: hidden;
+     
+}
+
+.intro_content {
+    margin-left: 8rem;
+}
+/* ABOUT */
+.about {
+    height: 450px;
+  
+}
+
+
+.about_left_image img {
+    width: 100%;
+    height: 330px;
+    position: relative;
+    top: 4rem;
+    right: -3rem;
+}
+
+
+/* PRESENTATION */
+
+.presentation {
+    text-align: center;
+}
+.presentation video {
+    width: 80%;
+}
+
+.presentation_info {
+    width: 78%;
+    margin: 0;
+
+}
+.presentation_info_titulo{
+    line-height: 2rem;
+}
+
+
+/* EXCEPCIONALES */
+
+.excepcionales_rigthimage1 img {
+    
+    width: 100%;          /* Permite que el ancho se ajuste automáticamente */
+    height: 300px;        /* Ajusta la altura a la medida deseada */
+    object-fit: cover;    /* Opcional: Asegura que la imagen llene el contenedor sin deformarse */
+    
+    position: relative;
+    top: 7rem;
+    right: 3rem;
+    
+}
+
+
+}
