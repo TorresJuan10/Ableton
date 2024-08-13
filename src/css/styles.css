@@ -50,6 +50,7 @@ header {
 .nav__content {
     flex: 1;
     padding: 0.5rem;
+    margin-bottom: 1.3rem;
 }
 
 
@@ -98,6 +99,7 @@ li {
 }
 
 .logotipo_intro {
+    
     filter: invert(1);
     max-width: 100%; /* Asegura que la imagen no se desborde horizontalmente */
     max-height: 100%; /* Asegura que la imagen no se desborde verticalmente */
@@ -107,6 +109,7 @@ li {
     top: 50%; */
     transform: translate(-50%, -10%); /* Centra la imagen dentro del contenedor */
 }
+
 
 
 .intro_content {
@@ -217,7 +220,143 @@ a {
     color: rgb(41, 39, 39);
     text-align: left;
 }
-/* RESPONSIVE */
+
+/* PRESENTATION */
+.presentation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
+.video {
+    width: 850px;
+    height: 450px;
+}
+
+.presentation_info {
+    margin-top: 7rem;
+    text-align: left;
+    width: 850px;
+    font-family: var(--inter);
+}
+
+.presentation_info_titulo {
+    font-family: var(--inter);
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 2.4rem;
+    line-height: 3rem;
+    margin: 2rem;
+}
+
+.presentation_info_parrafo {
+    font-size: 16px;
+    color: rgb(41, 39, 39);
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+
+
+
+
+
+
+/* RESPONSIVE TELEFONO */
+@media (max-width: 390px) {
+    
+    /* HEADER */
+    .abrir-menu {
+            font-size: 2.5rem;
+        }
+    /* MAIN */
+  .main {
+        width: 100%;
+        align-items: center;    
+    }
+    
+    .intro_bg {
+        height: 35vh;
+        right: 9%;   
+    }
+
+    .logotipo_intro {  
+    left: 50%;
+    top: 25%; 
+    }
+    
+    .intro_content {
+        width: 100%;
+        margin: 0 !important;
+        text-align: center;
+        padding: 0 2.5rem; 
+    }
+
+    /* ABOUT */
+
+    .about {
+        display: grid;
+        grid-template-columns: 43% 57%;
+        position: relative;
+        height: 250px;
+        margin-top: 4rem;
+    }
+    
+
+    .about_left_image img {
+        width: 100%;
+        height: 170px;
+        position: relative;
+        top: 2rem;
+        right: -2rem;
+    }
+
+    /* ABOUT_TEXT */
+
+
+
+    .about_text {
+        width: 100%;
+        height: auto;
+    }
+
+    .about_text_content {
+        padding: 0;
+        margin: 2.4rem 2.4rem 2.4rem 4rem;
+        font-family: var(--inter);
+       
+    }
+
+    .about_text_parrafo {
+        font-size: 12px;
+    }
+
+    /* PRESENTATION */
+
+    .presentation {
+        width: 100%;
+        height: 250px;
+    }
+    .video {
+        width: 100%;
+        height: 250px;
+    }
+
+    .presentation_info_titulo {
+        margin: 0;
+        margin-bottom: 1.4rem;
+    }
+}
+
+
+
+
+
+/* RESPONSIVE PC  */
 @media(max-width: 1024px ) {
     
     header {
@@ -283,5 +422,57 @@ a {
 
     transform: translate(-50%, 0); /* Centra la imagen dentro del contenedor */
 }
+
+/* PRESENTATION */ 
+
+.presentation_info {
+    margin: 0;
+}
+
+
+
+}
+
+/* MEDIA TABLET */
+@media (max-width: 768px) {
+
+/* MAIN */
+
+.main {
+    align-items: center;
+}
+
+.intro_bg {
+    margin: 2rem 4rem 4rem 4rem;
+    height: 65vh;
+    width: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+    overflow: hidden;
+     
+}
+
+.intro_content {
+    margin-left: 8rem;
+}
+
+/* PRESENTATION */
+
+.presentation {
+    text-align: center;
+}
+.presentation video {
+    width: 80%;
+}
+
+.presentation_info {
+    width: 78%;
+}
+.presentation_info_titulo{
+    line-height: 2rem;
+}
+
 
 }
